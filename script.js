@@ -107,11 +107,13 @@ startBtn.addEventListener("click", () => {
 
         if (totalTime <= 0) {
 
+            let completedTime = timerDisplay.textContent;
+
             clearInterval(timer);
 
             alarmSound.currentTime = 0;
             alarmSound.play();
-        saveSessionHistory(timerDisplay.textContent);
+            saveSessionHistory(completedTime);
             showRandomQuote();
 
             document.getElementById("completionMessage").textContent =
@@ -137,9 +139,7 @@ startBtn.addEventListener("click", () => {
 
             document.getElementById("sessionCount").textContent =
               `Today's Sessions: ${sessionCount}`;
-
-            document.getElementById("sessionCount").textContent =
-                `Completed Sessions: ${count}`;
+            
 
             totalTime = 0;
 
