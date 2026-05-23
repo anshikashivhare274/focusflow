@@ -297,10 +297,13 @@ addTaskBtn.addEventListener("click", () => {
 // ---------------- DARK MODE ----------------
 
 let themeToggle = document.getElementById("themeToggle");
-
 themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
+    themeToggle.textContent = document.body.classList.contains("light-mode") 
+        ? "🌙 Dark Mode" 
+        : "☀️ Light Mode";
 });
+
 function updateProgress() {
 
     let totalTasks = document.querySelectorAll("#taskList li").length;
