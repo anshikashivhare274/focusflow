@@ -40,10 +40,5 @@ HTML · CSS · JavaScript · LocalStorage
 - Debugging timer state and cached data bugs
 - Handling the browser Audio API
 
-## Run Locally
-git clone https://github.com/anshikashivhare274/focusflow.git
-cd focusflow
-open index.html
-
 ## Author
 **Anshika Shivhare**
