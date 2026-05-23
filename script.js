@@ -8,6 +8,7 @@ let totalTime = 0;
 let timer;
 let isRunning = false;
 let originalTime ="";
+let currentDisplayedTime = "";
 let hoursInput = document.getElementById("hoursInput");
 let minutesInput = document.getElementById("minutesInput");
 let secondsInput = document.getElementById("secondsInput");
@@ -108,7 +109,7 @@ startBtn.addEventListener("click", () => {
 
         if (totalTime <= 0) {
 
-            let completedTime = originalTime;
+            let completedTime = currentDisplayedTime;
 
             clearInterval(timer);
 
@@ -152,6 +153,7 @@ startBtn.addEventListener("click", () => {
         }
 
         totalTime--;
+        currentDisplayedTime = timerDisplay.textContent;
 
         updateTimer();
 
