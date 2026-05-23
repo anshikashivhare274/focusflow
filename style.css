@@ -396,3 +396,37 @@ footer a {
     li { flex-direction: column; gap: 10px; }
     .delete-btn { width: 100%; text-align: center; }
 }
+body.light-mode .timer-section,
+body.light-mode .task-section,
+body.light-mode .progress-section,
+body.light-mode .history-container {
+    background: #ffffff;
+    border-color: rgba(0,0,0,0.08);
+}
+
+body.light-mode li {
+    background: #f0f0eb;
+    border-color: rgba(0,0,0,0.08);
+}
+
+body.light-mode button {
+    background: #e8e8e3;
+    color: #111;
+    border-color: rgba(0,0,0,0.1);
+}
+
+body.light-mode #startBtn {
+    background: #111;
+    color: #e8ff57;
+    border-color: #111;
+}
+
+body.light-mode input {
+    background: #f0f0eb;
+    border-color: rgba(0,0,0,0.1);
+    color: #111;
+}
+
+body.light-mode #timer {
+    text-shadow: none;
+}
